@@ -6,6 +6,7 @@
 source $(dirname "${BASH_SOURCE[0]}")/init/buildinfo.sh
 
 # Must match the repo name.
+REPO="kepath"
 BINARY="unpoller"
 # Github repo containing homebrew formula repo.
 HBREPO="golift/homebrew-mugs"
@@ -21,12 +22,12 @@ LICENSE="MIT"
 FORMULA="service"
 
 # Used for source links and wiki links.
-SOURCE_URL="https://github.com/${BINARY}/${BINARY}"
+SOURCE_URL="https://github.com/${REPO}/${BINARY}"
 
 VERSION_PATH="golift.io/version"
 
 # This is a custom download path for homebrew formula.
-SOURCE_PATH=https://golift.io/${BINARY}/archive/v${VERSION}.tar.gz
+SOURCE_PATH=https://golift.io/${REPO}/archive/v${VERSION}.tar.gz
 
 export BINARY HBREPO MAINT VENDOR DESC GOLANGCI_LINT_ARGS CONFIG_FILE
 export LICENSE FORMULA SOURCE_URL VERSION_PATH SOURCE_PATH
