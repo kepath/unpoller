@@ -65,7 +65,3 @@ jobs:
           args: release --clean
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DOCKER_REGISTRY: ${{ env.DOCKER_REGISTRY }}
-          DOCKER_IMAGE_NAME: ${{ env.DOCKER_IMAGE_NAME }}
-          GPG_SIGNING_KEY: /tmp/key.gpg
-          GPG_SIGNING_KEY_ID: ${{ steps.import_gpg.outputs.keyid }}
